@@ -14,7 +14,7 @@ export const Team = () => {
             flag: '🇧🇷',
             experience: 'Founder / CLO SumSub ($5B val.)',
             description: 'Built one of the world\'s leading identity platforms, serving 2,000+ clients',
-            photo: 'photo_2026-01-28_10-15-44.jpg',
+            photo: 'finchdeck/photo_2026-01-28_10-15-44.jpg',
             company: 'SumSub',
             color: 'blue'
         },
@@ -24,7 +24,7 @@ export const Team = () => {
             flag: '🇧🇷',
             experience: 'Head of Architecture (Skyeng)',
             description: 'Scaled 150+ service architecture across EdTech, PropTech, and Healthcare platforms.',
-            photo: 'photo_2025-02-11_06-57-10.jpg',
+            photo: 'finchdeck/photo_2025-02-11_06-57-10.jpg',
             company: 'Skyeng',
             color: 'purple'
         },
@@ -34,7 +34,7 @@ export const Team = () => {
             flag: '🇨🇭',
             experience: 'Databricks Lead ($134B Val.)',
             description: 'Spent 20+ years building distributed data engines and heavy AI workloads',
-            photo: 'photo_2023-12-25_06-11-46.jpg',
+            photo: 'finchdeck/photo_2023-12-25_06-11-46.jpg',
             company: 'Databricks',
             color: 'emerald'
         }

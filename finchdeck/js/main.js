@@ -5,6 +5,7 @@ import { SectionWrapper } from './components/SectionWrapper.js';
 
 // Sections
 import { HeroSection } from './sections/Hero.js';
+import { Problem } from './sections/Problem.js';
 import { WhyNow } from './sections/WhyNow.js';
 import { Solution } from './sections/Solution.js';
 import { Trust } from './sections/Trust.js';
@@ -27,12 +28,19 @@ document.addEventListener('DOMContentLoaded', () => {
         fragment.appendChild(Header());
         fragment.appendChild(HeroSection());
 
-        // Why Now section (combines Problem + Timing) - Full screen slide
+        // Why Now section (Opportunity) - Full screen slide
         const whyNowSection = createElement('section', ['min-h-screen', 'flex', 'items-center', 'justify-center', 'border-b', 'border-gray-800', 'py-12'], [
             createElement('div', ['w-full', 'max-w-7xl', 'px-6'], [WhyNow()])
         ]);
         whyNowSection.id = 'why-now';
         fragment.appendChild(whyNowSection);
+
+        // Problem section - Full screen slide
+        const problemSection = createElement('section', ['min-h-screen', 'flex', 'items-center', 'justify-center', 'border-b', 'border-gray-800', 'py-12'], [
+            createElement('div', ['w-full', 'max-w-7xl', 'px-6'], [Problem()])
+        ]);
+        problemSection.id = 'problem';
+        fragment.appendChild(problemSection);
 
         // Solution section - Full screen slide
         const solutionSection = createElement('section', ['min-h-screen', 'flex', 'items-center', 'justify-center', 'border-b', 'border-gray-800', 'py-12'], [

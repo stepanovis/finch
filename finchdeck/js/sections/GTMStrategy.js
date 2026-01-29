@@ -2,8 +2,8 @@ import { createElement } from '../core/dom.js';
 
 export const GTMStrategy = () => {
     const header = createElement('div', ['text-center', 'mb-12'], [
-        createElement('h2', ['text-4xl', 'font-bold', 'text-blue-400', 'mb-2'], ['GO-TO-MARKET STRATEGY']),
-        createElement('p', ['text-xl', 'text-gray-300', 'font-light'], ['Three-Phase Market Penetration'])
+        createElement('h2', ['text-4xl', 'font-bold', 'text-white', 'mb-4'], ['THE EXECUTION']),
+        createElement('div', ['text-sm', 'text-gray-500', 'font-mono', 'uppercase', 'tracking-widest'], ['GTM STRATEGY'])
     ]);
 
     // Three phases
@@ -90,7 +90,7 @@ export const GTMStrategy = () => {
     // Divider
     const divider = createElement('div', ['flex', 'items-center', 'justify-center', 'mb-8'], [
         createElement('div', ['flex-1', 'h-px', 'bg-gradient-to-r', 'from-transparent', 'via-blue-700', 'to-transparent']),
-        createElement('div', ['px-6', 'text-blue-400', 'font-mono', 'text-sm', 'uppercase', 'tracking-widest'], ['↓ Geographic Strategy ↓']),
+        createElement('div', ['px-6', 'text-blue-400', 'font-mono', 'text-sm', 'uppercase', 'tracking-widest'], ['↓ Geographic ↓']),
         createElement('div', ['flex-1', 'h-px', 'bg-gradient-to-r', 'from-transparent', 'via-blue-700', 'to-transparent'])
     ]);
 
@@ -133,19 +133,40 @@ export const GTMStrategy = () => {
                 ]),
 
                 createElement('div', ['space-y-4'], [
-                    createElement('div', [], [
-                        createElement('div', ['text-sm', 'text-gray-400', 'mb-2'], ['Market']),
-                        createElement('div', ['flex', 'items-center', 'space-x-2', 'mb-3'], [
-                            createElement('span', ['text-xl'], ['🇲🇽']),
-                            createElement('span', ['text-xl'], ['🇦🇷']),
-                            createElement('span', ['text-xl'], ['🇨🇴']),
-                            createElement('span', ['text-sm', 'text-gray-300', 'ml-2'], ['Mexico, Argentina, Colombia'])
+                    createElement('div', ['flex', 'items-start', 'space-x-3'], [
+                        createElement('span', ['text-2xl'], ['🇲🇽']),
+                        createElement('div', ['flex-1'], [
+                            createElement('div', ['text-lg', 'font-bold', 'text-white', 'mb-1'], ['MEXICO']),
+                            createElement('div', ['text-sm', 'text-gray-400', 'mb-1'], ['Largest FinTech Market']),
+                            createElement('div', ['text-xs', 'text-purple-400', 'font-mono'], ['Channel: Partner Network'])
                         ])
                     ]),
 
-                    createElement('div', [], [
-                        createElement('div', ['text-sm', 'text-gray-400', 'mb-2'], ['Strategy']),
-                        createElement('div', ['text-sm', 'text-gray-300'], ['Fast-follow via established Channel Partners'])
+                    createElement('div', ['flex', 'items-start', 'space-x-3'], [
+                        createElement('span', ['text-2xl'], ['🇦🇷']),
+                        createElement('div', ['flex-1'], [
+                            createElement('div', ['text-lg', 'font-bold', 'text-white', 'mb-1'], ['ARGENTINA']),
+                            createElement('div', ['text-sm', 'text-gray-400', 'mb-1'], ['Crypto-Friendly Regulation']),
+                            createElement('div', ['text-xs', 'text-purple-400', 'font-mono'], ['Channel: Partner Network'])
+                        ])
+                    ]),
+
+                    createElement('div', ['flex', 'items-start', 'space-x-3'], [
+                        createElement('span', ['text-2xl'], ['🇨🇴']),
+                        createElement('div', ['flex-1'], [
+                            createElement('div', ['text-lg', 'font-bold', 'text-white', 'mb-1'], ['COLOMBIA']),
+                            createElement('div', ['text-sm', 'text-gray-400', 'mb-1'], ['Growing Neo-Bank Sector']),
+                            createElement('div', ['text-xs', 'text-purple-400', 'font-mono'], ['Channel: Partner Network'])
+                        ])
+                    ]),
+
+                    createElement('div', ['flex', 'items-start', 'space-x-3'], [
+                        createElement('span', ['text-2xl'], ['🇨🇱']),
+                        createElement('div', ['flex-1'], [
+                            createElement('div', ['text-lg', 'font-bold', 'text-white', 'mb-1'], ['CHILE']),
+                            createElement('div', ['text-sm', 'text-gray-400', 'mb-1'], ['Stable Regulatory Environment']),
+                            createElement('div', ['text-xs', 'text-purple-400', 'font-mono'], ['Channel: Partner Network'])
+                        ])
                     ])
                 ])
             ])

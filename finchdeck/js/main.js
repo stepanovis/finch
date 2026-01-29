@@ -7,6 +7,7 @@ import { SectionWrapper } from './components/SectionWrapper.js';
 import { HeroSection } from './sections/Hero.js';
 import { Problem } from './sections/Problem.js';
 import { WhyNow } from './sections/WhyNow.js';
+import { SolutionIntro } from './sections/SolutionIntro.js';
 import { Solution } from './sections/Solution.js';
 import { Trust } from './sections/Trust.js';
 import { DecisionGuide } from './sections/DecisionGuide.js';
@@ -41,6 +42,13 @@ document.addEventListener('DOMContentLoaded', () => {
         ]);
         problemSection.id = 'problem';
         fragment.appendChild(problemSection);
+
+        // Solution Intro section - Full screen slide with big text
+        const solutionIntroSection = createElement('section', ['min-h-screen', 'flex', 'items-center', 'justify-center', 'border-b', 'border-gray-800', 'py-12'], [
+            createElement('div', ['w-full', 'max-w-7xl', 'px-6'], [SolutionIntro()])
+        ]);
+        solutionIntroSection.id = 'solution-intro';
+        fragment.appendChild(solutionIntroSection);
 
         // Solution section - Full screen slide
         const solutionSection = createElement('section', ['min-h-screen', 'flex', 'items-center', 'justify-center', 'border-b', 'border-gray-800', 'py-12'], [

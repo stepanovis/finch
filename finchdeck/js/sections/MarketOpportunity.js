@@ -2,8 +2,7 @@ import { createElement } from '../core/dom.js';
 
 export const MarketOpportunity = () => {
     const header = createElement('div', ['text-center', 'mb-12'], [
-        createElement('h2', ['text-4xl', 'font-bold', 'text-blue-400', 'mb-2'], ['MARKET OPPORTUNITY']),
-        createElement('p', ['text-xl', 'text-gray-300', 'font-light'], ['The Compliance Automation Market'])
+        createElement('h2', ['text-4xl', 'font-bold', 'text-white', 'mb-4'], ['THE MARKET'])
     ]);
 
     // TAM/SAM/SOM Data
@@ -64,7 +63,7 @@ export const MarketOpportunity = () => {
                 createElement('div', ['bg-gray-800/50', 'p-5', 'rounded-lg', 'border', 'border-gray-700', 'hover:border-' + market.color + '-600', 'transition-all'], [
                     createElement('div', ['flex', 'items-center', 'justify-between', 'mb-2'], [
                         createElement('div', ['flex', 'items-center', 'space-x-3'], [
-                            createElement('div', ['w-3', 'h-3', 'rounded-full', 'bg-' + market.color + '-500']),
+                            createElement('div', ['w-3', 'h-3', 'rounded-full', market.label === 'SOM' ? 'bg-white' : 'bg-' + market.color + '-500']),
                             createElement('div', ['text-lg', 'font-bold', 'text-' + market.color + '-400'], [market.label + ' - ' + market.name])
                         ]),
                         createElement('div', ['text-2xl', 'font-bold', 'text-white'], [market.value])

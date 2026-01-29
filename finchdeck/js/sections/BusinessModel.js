@@ -1,13 +1,9 @@
 import { createElement } from '../core/dom.js';
 
 export const BusinessModel = () => {
-    const header = createElement('div', ['text-center', 'mb-8'], [
-        createElement('h2', ['text-4xl', 'font-bold', 'text-blue-400', 'mb-2'], ['THE BUSINESS MODEL']),
-        createElement('p', ['text-xl', 'text-gray-300', 'font-light'], ['Infrastructure Economics'])
-    ]);
-
-    const subtitle = createElement('div', ['text-center', 'mb-12'], [
-        createElement('p', ['text-lg', 'text-gray-400', 'uppercase', 'tracking-wider'], ['Our business model is designed for enterprise scale and retention'])
+    const header = createElement('div', ['text-center', 'mb-12'], [
+        createElement('h2', ['text-4xl', 'font-bold', 'text-white', 'mb-4'], ['THE BUSINESS MODEL']),
+        createElement('div', ['text-sm', 'text-gray-500', 'font-mono', 'uppercase', 'tracking-widest'], ['DESIGNED FOR ENTERPRISE SCALE AND RETENTION'])
     ]);
 
     // Three revenue tiers
@@ -80,7 +76,6 @@ export const BusinessModel = () => {
 
     return createElement('div', ['max-w-7xl', 'mx-auto'], [
         header,
-        subtitle,
         tierCards
     ]);
 };

@@ -2,8 +2,7 @@ import { createElement } from '../core/dom.js';
 
 export const CurrentStatus = () => {
     const header = createElement('div', ['text-center', 'mb-12'], [
-        createElement('h2', ['text-4xl', 'font-bold', 'text-blue-400', 'mb-2'], ['CURRENT STATUS & ROADMAP']),
-        createElement('p', ['text-xl', 'text-gray-300', 'font-light'], ['From Alpha to Commercial Launch'])
+        createElement('h2', ['text-4xl', 'font-bold', 'text-white', 'mb-4'], ['CURRENT STATUS & ROADMAP'])
     ]);
 
     // Timeline data

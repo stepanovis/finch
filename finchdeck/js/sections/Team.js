@@ -1,9 +1,9 @@
 import { createElement } from '../core/dom.js';
 
 export const Team = () => {
-    const header = createElement('div', ['text-center', 'mb-8'], [
-        createElement('h2', ['text-4xl', 'font-bold', 'text-blue-400', 'mb-2'], ['BUILT BY THE ARCHITECTS OF']),
-        createElement('p', ['text-3xl', 'text-blue-300', 'font-light'], ['MODERN COMPLIANCE'])
+    const header = createElement('div', ['text-center', 'mb-12'], [
+        createElement('h2', ['text-4xl', 'font-bold', 'text-white', 'mb-4'], ['THE TEAM']),
+        createElement('div', ['text-sm', 'text-gray-500', 'font-mono', 'uppercase', 'tracking-widest'], ['BUILT BY THE ARCHITECTS OF MODERN COMPLIANCE'])
     ]);
 
     // Team members
@@ -12,7 +12,7 @@ export const Team = () => {
             name: 'Tony Petrov',
             role: 'CHIEF EXECUTIVE OFFICER',
             flag: '🇧🇷',
-            experience: 'Founder / CLO SumSub ($5B val.)',
+            experience: 'CLO, Chief Compliance Officer ($5B val.)',
             description: 'Built one of the world\'s leading identity platforms, serving 2,000+ clients',
             photo: 'finchdeck/photo_2026-01-28_10-15-44.jpg',
             company: 'SumSub',
@@ -22,7 +22,7 @@ export const Team = () => {
             name: 'Ivan Stepanov',
             role: 'CHIEF TECH OFFICER',
             flag: '🇧🇷',
-            experience: 'Head of Architecture (Skyeng)',
+            experience: 'Skyeng Head of Architecture ',
             description: 'Scaled 150+ service architecture across EdTech, PropTech, and Healthcare platforms.',
             photo: 'finchdeck/photo_2025-02-11_06-57-10.jpg',
             company: 'Skyeng',
@@ -32,7 +32,7 @@ export const Team = () => {
             name: 'Alexander Fedosov',
             role: 'PRODUCT ARCHITECT',
             flag: '🇨🇭',
-            experience: 'Databricks Lead ($134B Val.)',
+            experience: 'Exited Databricks ($134B Val.)',
             description: 'Spent 20+ years building distributed data engines and heavy AI workloads',
             photo: 'finchdeck/photo_2023-12-25_06-11-46.jpg',
             company: 'Databricks',

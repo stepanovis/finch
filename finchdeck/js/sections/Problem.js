@@ -1,53 +1,56 @@
 import { createElement } from '../core/dom.js';
 
 export const Problem = () => {
-    const header = createElement('div', ['text-center', 'mb-12'], [
-        createElement('h2', ['text-4xl', 'font-bold', 'text-white', 'mb-2'], ['THE PROBLEM']),
-        createElement('p', ['text-gray-400', 'text-lg'], ['The Static Defense Trap'])
+    const header = createElement('div', ['text-center', 'mb-16'], [
+        createElement('h2', ['text-4xl', 'font-bold', 'text-white'], ['THE PROBLEM'])
     ]);
 
-    const problems = [
+    const stats = [
         {
-            title: 'ZOMBIE POLICIES',
-            subtitle: 'Compliance rules live in static, non-actionable documents',
-            blueText: 'They desperately need GenAI to make policies alive.'
+            number: '65%',
+            text: 'US Banks BANNED GenAI Due to Data Leakage Risks',
+            subtext: 'Cloud AI is non-compliant, trapping private data in legacy systems'
         },
         {
-            title: 'GENAI LEAK DATA',
-            subtitle: '65% US Banks BANNED GenAI Due to Leakage Risks',
-            blueText: '78% of employees use banned AI secretly anyway'
+            number: '78%',
+            text: 'Employees Use It Anyway',
+            subtext: 'Ban doesn\'t work — moves risk to shadow AI',
+            highlight: true
         },
         {
-            title: 'MANUAL WORK',
-            subtitle: '90-95% of market relies on manual Excel matrices',
-            blueText: 'Manual review slows business and guarantees human error at scale.'
+            number: '90%',
+            text: 'Market Relies on Manual Excel Matrices',
+            subtext: 'Manual review slows business and guarantees human error at scale'
+        },
+        {
+            number: '',
+            text: 'Static Zombie Policies',
+            subtext: 'Compliance rules live in static, non-actionable documents',
+            noNumber: true
         }
     ];
 
-    const problemCards = createElement('div', ['grid', 'grid-cols-1', 'lg:grid-cols-3', 'gap-8', 'max-w-7xl', 'mx-auto'],
-        problems.map(problem => {
-            const subtitles = [createElement('div', ['text-sm', 'text-red-500', 'font-mono'], [problem.subtitle])];
-            if (problem.subtitle2) {
-                subtitles.push(createElement('div', ['text-sm', 'text-red-500', 'font-mono', 'mt-4'], [problem.subtitle2]));
-            }
-
-            return createElement('div', ['p-6', 'rounded-lg', 'bg-red-900/10', 'h-full', 'flex', 'flex-col'], [
-                createElement('div', ['text-2xl', 'font-bold', 'text-red-400', 'mb-2'], [problem.title]),
-                createElement('div', ['mb-4'], subtitles),
-                createElement('div', ['text-sm', 'text-blue-300', 'font-medium', 'leading-relaxed', 'flex-grow'], [problem.blueText])
-            ]);
-        })
+    const statsList = createElement('div', ['max-w-6xl', 'mx-auto', 'space-y-8'],
+        stats.map(stat =>
+            createElement('div', ['flex', 'items-center', 'gap-8', 'p-6', 'rounded-lg', stat.highlight ? 'bg-red-900/20' : 'bg-red-900/10'], [
+                createElement('div', ['text-5xl', 'md:text-7xl', 'font-bold', 'text-red-400', 'min-w-[180px]', 'text-right', stat.noNumber ? 'invisible' : ''], [stat.noNumber ? '00%' : stat.number]),
+                createElement('div', ['flex-1'], [
+                    createElement('div', ['text-2xl', 'md:text-3xl', 'font-bold', 'text-white', 'mb-1'], [stat.text]),
+                    createElement('div', ['text-lg', 'text-gray-400', 'font-mono'], [stat.subtext])
+                ])
+            ])
+        )
     );
 
-    // Footnote with all sources
+    // Footnote with sources
     const footnote = createElement('div', ['max-w-7xl', 'mx-auto', 'mt-16', 'text-right'], [
-        createElement('div', ['text-[10px]', 'text-gray-500', 'font-mono'], ['Sources: Compliance Week 2024,']),
-        createElement('div', ['text-[10px]', 'text-gray-500', 'font-mono'], ['Gartner 2024, Salesforce AI Survey'])
+        createElement('div', ['text-[10px]', 'text-gray-500', 'font-mono'], ['Sources: Gartner 2024, Salesforce AI Survey,']),
+        createElement('div', ['text-[10px]', 'text-gray-500', 'font-mono'], ['Compliance Week 2024'])
     ]);
 
     return createElement('div', [], [
         header,
-        problemCards,
+        statsList,
         footnote
     ]);
 };

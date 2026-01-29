@@ -2,8 +2,8 @@ import { createElement } from '../core/dom.js';
 
 export const PreSeed = () => {
     const header = createElement('div', ['text-center', 'mb-12'], [
-        createElement('h2', ['text-4xl', 'font-bold', 'text-blue-400', 'mb-2'], ['PRE-SEED:']),
-        createElement('p', ['text-2xl', 'text-gray-300', 'font-light'], ['Tech Validation Round (10M+ Checks)'])
+        createElement('h2', ['text-4xl', 'font-bold', 'text-white', 'mb-4'], ['PRE-SEED: TECH VALIDATION ROUND']),
+        createElement('div', ['text-sm', 'text-gray-500', 'font-mono', 'uppercase', 'tracking-widest'], ['10M+ CHECKS'])
     ]);
 
     // Left side - Ask details

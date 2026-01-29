@@ -8,8 +8,8 @@ export const DecisionGuide = () => {
     let selectedMode = null;
 
     const header = createElement('div', ['text-center', 'mb-12'], [
-        createElement('h2', ['text-4xl', 'font-bold', 'text-blue-400', 'mb-2'], ['WHICH DEPLOYMENT MODE IS RIGHT FOR YOU?']),
-        createElement('p', ['text-xl', 'text-gray-300', 'font-light'], ['Click a deployment mode to see recommended parameters'])
+        createElement('h2', ['text-4xl', 'font-bold', 'text-white', 'mb-4'], ['THE DEPLOYMENT']),
+        createElement('div', ['text-sm', 'text-gray-500', 'font-mono', 'uppercase', 'tracking-widest'], ['A MODE FOR EVERYONE'])
     ]);
 
     // Sliders
@@ -39,7 +39,7 @@ export const DecisionGuide = () => {
     const canvas = createElement('canvas');
 
     // TCO Calculator - Horizontal Layout
-    const tcoCalculator = createElement('div', ['bg-white/5', 'p-6', 'rounded-lg', 'border', 'border-white/10'], [
+    const tcoCalculator = createElement('div', [], [
         createElement('div', ['grid', 'grid-cols-1', 'lg:grid-cols-2', 'gap-6'], [
             // Left: Controls
             createElement('div', ['space-y-6'], [
@@ -106,7 +106,7 @@ export const DecisionGuide = () => {
         },
         {
             mode: 'ON-PREMISE',
-            tagline: 'Own Forever',
+            tagline: 'Cut Costs',
             color: 'green',
             economics: '$500k+/year, ROI <12mo',
             regulation: 'Banking license, data residency laws',
@@ -140,9 +140,10 @@ export const DecisionGuide = () => {
     };
 
     const decisionFactorsRow = createElement('div', ['mb-8'], [
-        createElement('div', ['text-center', 'mb-6'], [
-            createElement('h3', ['text-xl', 'font-bold', 'text-white', 'mb-1'], ['Decision Factors']),
-            createElement('p', ['text-sm', 'text-gray-400'], ['Click to select recommended parameters'])
+        createElement('div', ['flex', 'items-center', 'justify-center', 'mb-8'], [
+            createElement('div', ['flex-1', 'h-px', 'bg-gradient-to-r', 'from-transparent', 'via-blue-700', 'to-transparent']),
+            createElement('div', ['px-6', 'text-blue-400', 'font-mono', 'text-sm', 'uppercase', 'tracking-widest'], ['↓ Select Mode ↓']),
+            createElement('div', ['flex-1', 'h-px', 'bg-gradient-to-r', 'from-transparent', 'via-blue-700', 'to-transparent'])
         ]),
 
         createElement('div', ['grid', 'grid-cols-1', 'md:grid-cols-3', 'gap-4'],

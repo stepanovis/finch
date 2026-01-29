@@ -44,7 +44,7 @@ export const MarketOpportunity = () => {
 
             // SAM - Medium circle
             createElement('div', ['absolute', 'inset-12', 'rounded-full', 'border-4', 'border-blue-600', 'bg-blue-900/20', 'flex', 'items-center', 'justify-center'], [
-                createElement('div', ['text-blue-400', 'font-mono', 'text-sm', 'absolute', 'top-4'], ['SAM - $12B'])
+                createElement('div', ['text-blue-400', 'font-mono', 'text-sm', 'absolute', 'top-4'], ['SAM - $27B'])
             ]),
 
             // SOM - Smallest circle

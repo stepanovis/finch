@@ -10,7 +10,7 @@ export const HeroSection = () => {
                 createElement('span', ['block', 'text-blue-400'], ['COPILOT'])
             ]),
             createElement('p', ['text-2xl', 'md:text-3xl', 'text-gray-300', 'mb-12', 'leading-relaxed', 'max-w-3xl', 'mx-auto', 'font-light'], [
-                'On-Prem Legal Infrastructure for Regulated Corporations'
+                'On-Prem Legal Infrastructure for Regulated Enterprises'
             ]),
             createElement('div', ['flex', 'justify-center', 'space-x-12', 'max-w-3xl', 'mx-auto'], [
                 createElement('div', ['text-center'], [
@@ -18,8 +18,8 @@ export const HeroSection = () => {
                     createElement('div', ['text-xs', 'text-gray-600'], ['No zombie policies'])
                 ]),
                 createElement('div', ['text-center'], [
-                    createElement('div', ['text-sm', 'font-mono', 'text-gray-500', 'uppercase', 'tracking-wider', 'mb-1'], ['Local AI Training']),
-                    createElement('div', ['text-xs', 'text-gray-600'], ['On-premise models'])
+                    createElement('div', ['text-sm', 'font-mono', 'text-gray-500', 'uppercase', 'tracking-wider', 'mb-1'], ['Local AI Memory']),
+                    createElement('div', ['text-xs', 'text-gray-600'], ['Private and custom'])
                 ]),
                 createElement('div', ['text-center'], [
                     createElement('div', ['text-sm', 'font-mono', 'text-gray-500', 'uppercase', 'tracking-wider', 'mb-1'], ['ZK Proofs']),

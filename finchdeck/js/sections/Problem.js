@@ -23,23 +23,30 @@ export const Problem = () => {
             subtext: 'Manual review slows business and guarantees human error at scale'
         },
         {
-            number: '',
-            text: 'Static Zombie Policies',
-            subtext: 'Compliance rules live in static, non-actionable documents',
-            noNumber: true
+            number: '0%',
+            text: 'Prevention: Static Zombie Policies',
+            subtext: 'Compliance rules once written, stagnate as non-actionable documents'
         }
     ];
 
     const statsList = createElement('div', ['max-w-6xl', 'mx-auto', 'space-y-8'],
-        stats.map(stat =>
-            createElement('div', ['flex', 'items-center', 'gap-8', 'p-6', 'rounded-lg', stat.highlight ? 'bg-red-900/20' : 'bg-red-900/10'], [
-                createElement('div', ['text-5xl', 'md:text-7xl', 'font-bold', 'text-red-400', 'min-w-[180px]', 'text-right', stat.noNumber ? 'invisible' : ''], [stat.noNumber ? '00%' : stat.number]),
+        stats.map(stat => {
+            const isZero = stat.number === '0%';
+            return createElement('div', ['flex', 'items-center', 'gap-8', 'p-6', 'rounded-lg', stat.highlight ? 'bg-red-900/20' : 'bg-red-900/10'], [
+                createElement('div', ['text-5xl', 'md:text-7xl', 'font-bold', 'text-red-400', 'min-w-[180px]', 'text-right'], 
+                    isZero 
+                        ? [
+                            createElement('span', ['invisible'], ['0']),
+                            createElement('span', [], ['0%'])
+                          ]
+                        : [stat.number]
+                ),
                 createElement('div', ['flex-1'], [
                     createElement('div', ['text-2xl', 'md:text-3xl', 'font-bold', 'text-white', 'mb-1'], [stat.text]),
                     createElement('div', ['text-lg', 'text-gray-400', 'font-mono'], [stat.subtext])
                 ])
-            ])
-        )
+            ]);
+        })
     );
 
     // Footnote with sources

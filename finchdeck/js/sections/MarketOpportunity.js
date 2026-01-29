@@ -17,9 +17,9 @@ export const MarketOpportunity = () => {
         },
         {
             label: 'SAM',
-            name: 'US FinTech Budget',
-            value: '$12B',
-            description: 'Serviceable available market focused specifically on domestic financial technology enterprises',
+            name: 'Americas Compliance OPS',
+            value: '$27B',
+            description: 'Serviceable market in the US-LATAM Corridor. Includes $15B spent annually in LATAM on Financial Crime Compliance (FCC)',
             color: 'blue',
             size: 'medium'
         },

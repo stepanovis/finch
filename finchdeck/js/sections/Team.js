@@ -12,7 +12,7 @@ export const Team = () => {
             name: 'Tony Petrov',
             role: 'CHIEF EXECUTIVE OFFICER',
             flag: '🇧🇷',
-            experience: 'CLO, Chief Compliance Officer ($5B val.)',
+            experience: 'CLO, Chief Compliance Officer Sumsab ($5B val.)',
             description: 'Built one of the world\'s leading identity platforms, serving 2,000+ clients',
             photo: 'finchdeck/photo_2026-01-28_10-15-44.jpg',
             company: 'SumSub',

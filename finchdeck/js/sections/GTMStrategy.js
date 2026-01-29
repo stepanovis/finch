@@ -56,7 +56,7 @@ export const GTMStrategy = () => {
         ]),
 
         // Phase cards
-        createElement('div', ['grid', 'grid-cols-3', 'gap-6'],
+        createElement('div', ['grid', 'grid-cols-1', 'md:grid-cols-3', 'gap-6'],
             phases.map(phase =>
                 createElement('div', [
                     'relative', 'p-6', 'rounded-lg', 'bg-gray-800/50', 'border-2', 'border-' + phase.color + '-800',
@@ -96,7 +96,7 @@ export const GTMStrategy = () => {
 
     // Geographic strategy
     const geographicStrategy = createElement('div', ['max-w-5xl', 'mx-auto'], [
-        createElement('div', ['grid', 'grid-cols-2', 'gap-8'], [
+        createElement('div', ['grid', 'grid-cols-1', 'md:grid-cols-2', 'gap-8'], [
             // 2026 - Primary Corridor
             createElement('div', ['bg-blue-900/20', 'border', 'border-blue-800', 'p-6', 'rounded-lg'], [
                 createElement('div', ['text-center', 'mb-6'], [

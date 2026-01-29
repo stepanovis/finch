@@ -34,9 +34,9 @@ export const MarketOpportunity = () => {
     ];
 
     // Concentric circles visualization
-    const visualization = createElement('div', ['flex', 'items-center', 'justify-center', 'mb-12'], [
-        // Left side - Circles
-        createElement('div', ['relative', 'w-96', 'h-96', 'mr-16'], [
+    const visualization = createElement('div', ['flex', 'flex-col', 'lg:flex-row', 'items-center', 'justify-center', 'mb-12'], [
+        // Left side - Circles (hidden on mobile)
+        createElement('div', ['relative', 'w-64', 'h-64', 'lg:w-96', 'lg:h-96', 'mb-8', 'lg:mb-0', 'lg:mr-16', 'hidden', 'md:block'], [
             // TAM - Largest circle
             createElement('div', ['absolute', 'inset-0', 'rounded-full', 'border-4', 'border-gray-600', 'bg-gray-800/20', 'flex', 'items-center', 'justify-center'], [
                 createElement('div', ['text-gray-500', 'font-mono', 'text-sm', 'absolute', 'top-4'], ['TAM - $274B'])
@@ -81,7 +81,7 @@ export const MarketOpportunity = () => {
             createElement('div', ['text-2xl', 'font-bold', 'text-white'], ['500 US Series B-D Neo-banks & Crypto Exchanges'])
         ]),
 
-        createElement('div', ['grid', 'grid-cols-3', 'gap-6', 'text-center'], [
+        createElement('div', ['grid', 'grid-cols-1', 'sm:grid-cols-3', 'gap-6', 'text-center'], [
             createElement('div', [], [
                 createElement('div', ['text-3xl', 'font-bold', 'text-emerald-400', 'mb-1'], ['500']),
                 createElement('div', ['text-sm', 'text-gray-400'], ['Target Companies'])

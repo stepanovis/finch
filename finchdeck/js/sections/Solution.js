@@ -33,7 +33,7 @@ export const Solution = () => {
         }
     ];
 
-    const sovereignGrid = createElement('div', ['grid', 'grid-cols-2', 'gap-8', 'max-w-3xl', 'mx-auto', 'mb-12'],
+    const sovereignGrid = createElement('div', ['grid', 'grid-cols-1', 'md:grid-cols-2', 'gap-8', 'max-w-3xl', 'mx-auto', 'mb-12'],
         sovereignModes.map(mode =>
             createElement('div', [
                 'p-6', 'rounded-lg', 'border', 'border-gray-700',
@@ -106,7 +106,7 @@ export const Solution = () => {
         }
     ];
 
-    const capabilitiesGrid = createElement('div', ['grid', 'grid-cols-2', 'gap-6', 'max-w-6xl', 'mx-auto'],
+    const capabilitiesGrid = createElement('div', ['grid', 'grid-cols-1', 'md:grid-cols-2', 'gap-6', 'max-w-6xl', 'mx-auto'],
         capabilities.map(capability =>
             createElement('div', [
                 'p-6', 'rounded-lg', 'bg-gray-800/50', 'border', 'border-gray-700'

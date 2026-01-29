@@ -41,7 +41,7 @@ export const Team = () => {
     ];
 
     // Team cards
-    const teamCards = createElement('div', ['grid', 'grid-cols-3', 'gap-8', 'max-w-7xl', 'mx-auto'],
+    const teamCards = createElement('div', ['grid', 'grid-cols-1', 'md:grid-cols-3', 'gap-8', 'max-w-7xl', 'mx-auto'],
         team.map(member =>
             createElement('div', [
                 'bg-gray-800/50', 'rounded-lg', 'border-2', 'border-gray-700',

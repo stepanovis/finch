@@ -77,7 +77,7 @@ export const PreSeed = () => {
     ]);
 
     // Two column layout
-    const content = createElement('div', ['grid', 'grid-cols-2', 'gap-12', 'max-w-7xl', 'mx-auto'], [
+    const content = createElement('div', ['grid', 'grid-cols-1', 'lg:grid-cols-2', 'gap-12', 'max-w-7xl', 'mx-auto'], [
         askDetails,
         allocationSection
     ]);

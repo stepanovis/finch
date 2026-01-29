@@ -48,7 +48,7 @@ export const CurrentStatus = () => {
     // Timeline visualization
     const timelineViz = createElement('div', ['mb-16'], [
         // Timeline with circles and cards
-        createElement('div', ['grid', 'grid-cols-3', 'gap-6', 'max-w-7xl', 'mx-auto'],
+        createElement('div', ['grid', 'grid-cols-1', 'md:grid-cols-3', 'gap-6', 'max-w-7xl', 'mx-auto'],
             timeline.map((phase, index) => {
                 const isLast = index === timeline.length - 1;
                 return createElement('div', ['flex', 'flex-col', 'items-center'], [

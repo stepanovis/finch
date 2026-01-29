@@ -38,7 +38,7 @@ export const BusinessModel = () => {
     ];
 
     // Tier cards
-    const tierCards = createElement('div', ['grid', 'grid-cols-3', 'gap-8', 'max-w-7xl', 'mx-auto'],
+    const tierCards = createElement('div', ['grid', 'grid-cols-1', 'md:grid-cols-3', 'gap-8', 'max-w-7xl', 'mx-auto'],
         tiers.map(tier =>
             createElement('div', [
                 'bg-gray-800/50', 'p-8', 'rounded-lg', 'border-2',

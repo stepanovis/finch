@@ -62,7 +62,7 @@ export const Competition = () => {
         return null;
     };
 
-    const competitorCards = createElement('div', ['grid', 'grid-cols-3', 'gap-6', 'max-w-7xl', 'mx-auto'],
+    const competitorCards = createElement('div', ['grid', 'grid-cols-1', 'md:grid-cols-3', 'gap-6', 'max-w-7xl', 'mx-auto'],
         competitors.map(competitor => {
             const cardClasses = [
                 'p-6', 'rounded-lg', 'border', 'border-gray-700', 'bg-gray-800/50', 'relative'

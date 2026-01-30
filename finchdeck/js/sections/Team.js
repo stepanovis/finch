@@ -71,8 +71,8 @@ export const Team = () => {
                         createElement('div', ['text-xs', 'text-' + member.color + '-400', 'font-mono', 'uppercase', 'tracking-wider'], [member.role])
                     ]),
 
-                    // Experience badge (ICON REMOVED)
-                    createElement('div', ['mb-4'], [
+                    // Experience badge
+                    createElement('div', ['mb-4', 'min-h-[3rem]', 'flex', 'items-center'], [
                         createElement('div', ['text-sm', 'text-blue-400', 'font-bold'], [member.experience])
                     ]),
 

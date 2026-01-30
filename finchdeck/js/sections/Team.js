@@ -12,7 +12,7 @@ export const Team = () => {
             name: 'Tony Petrov',
             role: 'CHIEF EXECUTIVE OFFICER',
             flag: '🇧🇷',
-            experience: 'CLO, Chief Compliance Officer Sumsab ($5B val.)',
+            experience: 'CLO, Chief Compliance Officer Sumsub ($5B val.)',
             description: 'Built one of the world\'s leading identity platforms, serving 2,000+ clients',
             photo: 'finchdeck/photo_2026-01-28_10-15-44.jpg',
             company: 'SumSub',
@@ -71,12 +71,9 @@ export const Team = () => {
                         createElement('div', ['text-xs', 'text-' + member.color + '-400', 'font-mono', 'uppercase', 'tracking-wider'], [member.role])
                     ]),
 
-                    // Experience badge
+                    // Experience badge (ICON REMOVED)
                     createElement('div', ['mb-4'], [
-                        createElement('div', ['inline-flex', 'items-center', 'space-x-2', 'text-sm', 'text-blue-400'], [
-                            createElement('span', ['text-blue-400'], ['📈']),
-                            createElement('span', ['font-bold'], [member.experience])
-                        ])
+                        createElement('div', ['text-sm', 'text-blue-400', 'font-bold'], [member.experience])
                     ]),
 
                     // Description

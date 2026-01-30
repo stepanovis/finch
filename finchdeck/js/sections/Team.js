@@ -72,8 +72,8 @@ export const Team = () => {
                     ]),
 
                     // Experience badge
-                    createElement('div', ['mb-4', 'min-h-[3rem]', 'flex', 'items-center'], [
-                        createElement('div', ['text-sm', 'text-blue-400', 'font-bold'], [member.experience])
+                    createElement('div', ['mb-4', 'h-10', 'flex', 'items-start'], [
+                        createElement('div', ['text-sm', 'text-blue-400', 'font-bold', 'leading-snug'], [member.experience])
                     ]),
 
                     // Description
